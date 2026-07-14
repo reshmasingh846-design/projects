@@ -1,0 +1,18 @@
+{
+  "input": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\Input_data.csv",
+  "target_column": "AccountBalance",
+  "frequency": "1min",
+  "horizon_minutes": 60,
+  "regular_rows": 519990,
+  "train_rows": 519930,
+  "test_rows": 60,
+  "test_metrics": {
+    "mae": 5070.892722167969,
+    "rmse": 5811.445782977539,
+    "mape_percent": 47.04268308662112
+  },
+  "outputs": {
+    "test_forecast": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_1h\\timesfm_test_1h_forecast.csv",
+    "future_forecast": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_1h\\timesfm_future_1h_forecast.csv"
+  }
+}

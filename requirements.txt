@@ -26,7 +26,7 @@ idna==3.10
     # via
     #   anyio
     #   httpx
-numpy==2.2.6
+numpy
     # via timesfm (pyproject.toml)
 packaging==25.0
     # via huggingface-hub

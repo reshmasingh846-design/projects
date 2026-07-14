@@ -1,0 +1,105 @@
+{
+  "input": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\Input_data.csv",
+  "date_col": "TransactionDate",
+  "target_col": "AccountBalance",
+  "bucket": "5min",
+  "forecast_length": "1h",
+  "horizon_steps": 12,
+  "aggregation": "mean",
+  "fill_method": "interpolate",
+  "seasonality": "additive",
+  "timesfm_api": "timesfm_2p5",
+  "regular_rows": 103998,
+  "date_range": {
+    "start": "2023-01-02 16:00:00",
+    "end": "2023-12-29 18:25:00"
+  },
+  "split_metrics": [
+    {
+      "mae": 21.11865234375,
+      "rmse": 24.69057846069336,
+      "mape_percent": 0.41822028160095215,
+      "bias": 21.11865234375,
+      "split": "70_15_15",
+      "window": "validation",
+      "train_rows": 72798,
+      "evaluated_rows": 12,
+      "start": "2023-09-12 10:30:00",
+      "end": "2023-09-12 11:25:00"
+    },
+    {
+      "mae": 37.20573043823242,
+      "rmse": 37.57854461669922,
+      "mape_percent": 0.8128490447998047,
+      "bias": 37.20573043823242,
+      "split": "70_15_15",
+      "window": "test",
+      "train_rows": 88398,
+      "evaluated_rows": 12,
+      "start": "2023-11-05 14:30:00",
+      "end": "2023-11-05 15:25:00"
+    },
+    {
+      "mae": 107.9783935546875,
+      "rmse": 108.22581481933594,
+      "mape_percent": 5.02599573135376,
+      "bias": 107.9783935546875,
+      "split": "80_10_10",
+      "window": "validation",
+      "train_rows": 83198,
+      "evaluated_rows": 12,
+      "start": "2023-10-18 13:10:00",
+      "end": "2023-10-18 14:05:00"
+    },
+    {
+      "mae": 3502.02734375,
+      "rmse": 4393.4814453125,
+      "mape_percent": 126.48924255371094,
+      "bias": 3383.014892578125,
+      "split": "80_10_10",
+      "window": "test",
+      "train_rows": 93598,
+      "evaluated_rows": 12,
+      "start": "2023-11-23 15:50:00",
+      "end": "2023-11-23 16:45:00"
+    },
+    {
+      "mae": 69.09603118896484,
+      "rmse": 69.1584243774414,
+      "mape_percent": 2.00542950630188,
+      "bias": 69.09603118896484,
+      "split": "60_20_20",
+      "window": "validation",
+      "train_rows": 62398,
+      "evaluated_rows": 12,
+      "start": "2023-08-07 07:50:00",
+      "end": "2023-08-07 08:45:00"
+    },
+    {
+      "mae": 107.9783935546875,
+      "rmse": 108.22581481933594,
+      "mape_percent": 5.02599573135376,
+      "bias": 107.9783935546875,
+      "split": "60_20_20",
+      "window": "test",
+      "train_rows": 83198,
+      "evaluated_rows": 12,
+      "start": "2023-10-18 13:10:00",
+      "end": "2023-10-18 14:05:00"
+    }
+  ],
+  "walk_forward_average_metrics": {
+    "mae": 476.59381254514057,
+    "rmse": 546.5854469935099,
+    "mape_percent": 37.8188605842491,
+    "bias": 377.69857263565063
+  },
+  "outputs": {
+    "prepared_data": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_dynamic_bucket\\prepared_5min.csv",
+    "split_metrics": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_dynamic_bucket\\split_metrics.csv",
+    "split_forecasts": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_dynamic_bucket\\split_forecasts.csv",
+    "walk_forward_metrics": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_dynamic_bucket\\walk_forward_metrics.csv",
+    "walk_forward_forecasts": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_dynamic_bucket\\walk_forward_forecasts.csv",
+    "future_forecast": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\examples\\global-temperature\\output_dynamic_bucket\\future_forecast.csv"
+  }
+}
