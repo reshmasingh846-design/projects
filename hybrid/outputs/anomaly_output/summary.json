@@ -1,0 +1,54 @@
+{
+  "n_days": 643,
+  "date_range": [
+    "2023-04-11",
+    "2025-01-12"
+  ],
+  "historical_bounds": {
+    "global_mean": -4969.505069984448,
+    "global_std": 3805.8032268112556,
+    "median": -4693.6,
+    "mad_scale": 4714.193567999999,
+    "iqr_lower": -16694.002500000002,
+    "iqr_upper": 7781.617500000002
+  },
+  "methods": [
+    "flag_zscore",
+    "flag_modified_zscore",
+    "flag_iqr",
+    "flag_rolling_zscore",
+    "flag_iso_forest",
+    "flag_lof"
+  ],
+  "vote_threshold": 2,
+  "n_anomalies": 13,
+  "anomaly_rate_pct": 2.02,
+  "forecast": [
+    {
+      "date": "2025-01-13",
+      "sarimax_forecast": -4331.975370704464,
+      "sarimax_lower95": -12453.260953562018,
+      "sarimax_upper95": 3789.310212153089,
+      "holtwinters_forecast": -5337.619619613509,
+      "seasonal_naive_forecast": -3453.745,
+      "ensemble_forecast": -4374.446663439324,
+      "modified_zscore": 0.06770051589037267,
+      "outside_iqr_fences": false,
+      "outside_modified_z": false,
+      "risk_level": "Normal"
+    },
+    {
+      "date": "2025-01-14",
+      "sarimax_forecast": -5622.378927730146,
+      "sarimax_lower95": -13746.049176234505,
+      "sarimax_upper95": 2501.291320774213,
+      "holtwinters_forecast": -5509.547762439681,
+      "seasonal_naive_forecast": -7982.2125,
+      "ensemble_forecast": -6371.379730056608,
+      "modified_zscore": -0.3558996264908163,
+      "outside_iqr_fences": false,
+      "outside_modified_z": false,
+      "risk_level": "Normal"
+    }
+  ]
+}
