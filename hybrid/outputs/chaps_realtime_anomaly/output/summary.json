@@ -1,0 +1,46 @@
+{
+  "n_rows": 2136,
+  "date_range": [
+    "2025-01-02 00:00:00",
+    "2025-03-31 23:00:00"
+  ],
+  "config": {
+    "data_path": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\timesfm-forecasting\\chaps_demo.csv",
+    "out_dir": "C:\\Users\\reshm\\OneDrive\\Documents\\work\\timesfm\\hybrid\\outputs\\chaps_realtime_anomaly\\output",
+    "rolling_window_hours": 504,
+    "seasonal_window_occ": 8,
+    "seasonal_min_occ": 4,
+    "expected_anomaly_rate": 0.03,
+    "z_threshold": 3.0,
+    "ewma_lambda": 0.2,
+    "ewma_l": 3.0,
+    "cusum_k": 0.5,
+    "cusum_h": null,
+    "cusum_warn_fraction": 0.6,
+    "cusum_h_grid": [
+      1.0,
+      20.0,
+      0.25
+    ],
+    "if_retrain_every": 24,
+    "if_min_train": 240,
+    "if_n_estimators": 300,
+    "lof_retrain_every": 24,
+    "lof_min_train": 240,
+    "lof_neighbors": 35,
+    "vote_threshold": 3,
+    "random_state": 42,
+    "train_end": 854,
+    "cusum_h_calibrated": 6.0
+  },
+  "flag_counts": {
+    "z_flag": 69,
+    "ewma_flag": 200,
+    "sb_flag": 54,
+    "if_flag": 105,
+    "lof_flag": 116
+  },
+  "n_confirmed_anomalies": 76,
+  "n_building_stress": 111,
+  "latest_status": "Watch"
+}

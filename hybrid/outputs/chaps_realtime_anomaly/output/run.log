@@ -1,0 +1,12 @@
+2026-09-02 21:54:28,934 | INFO    | Loaded 2136 hourly rows: 2025-01-02 00:00:00 -> 2025-03-31 23:00:00
+2026-09-02 21:54:28,936 | INFO    | Config: rolling_window_hours=504 expected_anomaly_rate=0.030 z_threshold=3.00 vote_threshold=3/5
+2026-09-02 21:54:28,952 | INFO    | Signal 1/5: seasonal z-score (causal deseasonalized residual)
+2026-09-02 21:54:29,021 | INFO    | Signal 2/5: EWMA control chart
+2026-09-02 21:54:29,025 | INFO    | Signal 3/5: CUSUM structural break (reset-on-signal + pre-alarm)
+2026-09-02 21:54:29,103 | INFO    | CUSUM auto-calibration: K=0.50 -> H=6.00 (training flag rate 2.7%, target 3.0%)
+2026-09-02 21:54:29,117 | INFO    | Signal 4/5: Isolation Forest (retrain every 24 hours)
+2026-09-02 21:56:04,978 | INFO    | Signal 5/5: Local Outlier Factor (novelty, retrain every 24 hours)
+2026-09-02 21:56:09,229 | INFO    | Building ensemble + status
+2026-09-02 21:56:09,379 | INFO    | Generating dashboard
+2026-09-02 21:56:17,626 | INFO    | Writing analysis report
+2026-09-02 21:56:17,629 | INFO    | Done. Outputs in C:\Users\reshm\OneDrive\Documents\work\timesfm\hybrid\outputs\chaps_realtime_anomaly\output
