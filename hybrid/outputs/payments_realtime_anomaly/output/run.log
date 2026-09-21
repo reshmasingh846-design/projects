@@ -1,0 +1,24 @@
+2026-09-21 19:08:46,542 | INFO    | ==============================================================================
+2026-09-21 19:08:46,542 | INFO    | REAL-TIME PAYMENT ANOMALY DETECTION + EARLY WARNING
+2026-09-21 19:08:46,542 | INFO    | ==============================================================================
+2026-09-21 19:08:46,545 | INFO    | Generating 175 business days (2026-01-19 -> 2026-09-18); history ends 2026-07-18
+2026-09-21 19:08:46,546 | INFO    | Planted 8 incidents in the live period
+2026-09-21 19:08:56,215 | INFO    | Generated 1,085,673 transactions, total value 250.00bn
+2026-09-21 19:08:56,721 | INFO    | Aggregated to 126,175 minute rows across 175 sessions
+2026-09-21 19:08:57,342 | INFO    | Seasonal baseline ready; 119,005 of 126,175 minutes warm (94.3%); log-scale MAD median=0.678 floor=0.500; std_residual sd=1.41
+2026-09-21 19:08:57,471 | INFO    | Z-score detector: 2,451 flags
+2026-09-21 19:08:57,514 | INFO    | Shewhart detector: 1,386 rule-1 breaches, 4,712 supplementary-rule minutes
+2026-09-21 19:08:57,736 | INFO    | EWMA detector: 1,365 flags on total flow, 6,082 on the credit leg
+2026-09-21 19:09:16,443 | INFO    | Isolation Forest: 31 retrains, 435 flags
+2026-09-21 19:09:16,558 | INFO    | Ticket-level extreme control: 141 minutes carry a payment above the trailing q0.9995 ticket threshold (median threshold 12.4m)
+2026-09-21 19:09:16,565 | INFO    | Static P95/P5 benchmark: upper=4953071 lower=169221 -> 12,752 flagged minutes (10.1%)
+2026-09-21 19:09:20,036 | INFO    | Ensemble: 2,346 confirmed, 34 early-warning RED, 4,690 amber
+2026-09-21 19:09:24,584 | INFO    | Attributed 2,346 alert minutes to 9,352 contributing transactions
+2026-09-21 19:09:24,603 | INFO    | Incident scorecard: 8/8 detected by ensemble, 8/8 by the static line
+2026-09-21 19:09:24,617 | INFO    | False-alarm load per session: ensemble 2.75 episodes vs static line 20.63 episodes
+2026-09-21 19:09:35,877 | INFO    | Dashboard written to C:\Users\reshm\OneDrive\Documents\work\timesfm\hybrid\outputs\payments_realtime_anomaly\output\dashboard.png
+2026-09-21 19:09:35,889 | INFO    | Report written to C:\Users\reshm\OneDrive\Documents\work\timesfm\hybrid\outputs\payments_realtime_anomaly\output\analysis_report.md
+2026-09-21 19:09:35,889 | INFO    | ------------------------------------------------------------------------------
+2026-09-21 19:09:35,889 | INFO    | Wrote 10 artefacts to C:\Users\reshm\OneDrive\Documents\work\timesfm\hybrid\outputs\payments_realtime_anomaly\output
+2026-09-21 19:09:35,889 | INFO    | Completed in 49.3s
+2026-09-21 19:09:35,973 | INFO    | Streaming 8,652 minutes (Ctrl-C to stop)

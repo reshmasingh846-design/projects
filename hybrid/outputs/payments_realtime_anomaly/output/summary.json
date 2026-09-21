@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-09-21T19:09:24",
+  "config": {
+    "history_months": 6,
+    "live_months": 2,
+    "session": "06:00-18:00",
+    "slot_minutes": 15,
+    "z_threshold": 3.0,
+    "shewhart_l": 3.0,
+    "ewma_lambda": 0.08,
+    "ewma_l": 3.0,
+    "expected_anomaly_rate": 0.01,
+    "vote_threshold": 2,
+    "ewi_amber": 50.0,
+    "ewi_red": 78.0
+  },
+  "ledger": {
+    "n_transactions": 1085673,
+    "total_value_bn": 249.99918783897,
+    "median_txn": 111429.22,
+    "p99_txn": 1845812.8268000057,
+    "dr_share_pct": 52.1024286318256
+  },
+  "period": {
+    "start": "2026-01-19 06:00:00",
+    "end": "2026-09-18 18:00:00",
+    "history_end": "2026-07-19",
+    "n_sessions": 175,
+    "n_minutes": 126175
+  },
+  "detectors": {
+    "Rolling z-score": {
+      "flags": 2451,
+      "rate_pct": 1.9425401228452546
+    },
+    "Shewhart I-chart": {
+      "flags": 1386,
+      "rate_pct": 1.0984743411927878
+    },
+    "EWMA (total flow)": {
+      "flags": 1365,
+      "rate_pct": 1.0818307905686546
+    },
+    "EWMA (credit leg)": {
+      "flags": 6082,
+      "rate_pct": 4.820289280760848
+    },
+    "Isolation Forest": {
+      "flags": 435,
+      "rate_pct": 0.34475926292847237
+    },
+    "Ticket extreme (supplementary)": {
+      "flags": 141,
+      "rate_pct": 0.11174955419060828
+    },
+    "Static P95/P5 (incumbent)": {
+      "flags": 12752,
+      "rate_pct": 10.106597978997424
+    }
+  },
+  "status_distribution": {
+    "RED_CONFIRMED": {
+      "minutes": 2346,
+      "pct": 1.8593223697245889
+    },
+    "RED_EARLY_WARNING": {
+      "minutes": 34,
+      "pct": 0.026946701010501287
+    },
+    "AMBER_BUILDING": {
+      "minutes": 4690,
+      "pct": 3.7170596393897366
+    },
+    "GREEN": {
+      "minutes": 119105,
+      "pct": 94.39667128987517
+    }
+  },
+  "incidents": {
+    "total": 8,
+    "detected": 8,
+    "static_detected": 8,
+    "median_ewi_lead_min": 36.0,
+    "median_minutes_to_confirm": 7.0
+  },
+  "false_alarms": {
+    "n_sessions": 172,
+    "quiet_minutes": 118440,
+    "ensemble": {
+      "false_alarm_minutes": 2020,
+      "false_alarm_rate_pct": 1.7055048969942588,
+      "false_alarm_episodes": 473,
+      "episodes_per_session": 2.75
+    },
+    "static_p95": {
+      "false_alarm_minutes": 8873,
+      "false_alarm_rate_pct": 7.491556906450524,
+      "false_alarm_episodes": 3549,
+      "episodes_per_session": 20.63372093023256
+    },
+    "ewi_amber_or_worse": {
+      "false_alarm_minutes": 5614,
+      "false_alarm_rate_pct": 4.739952718676123,
+      "false_alarm_episodes": 630,
+      "episodes_per_session": 3.6627906976744184
+    }
+  }
+}
